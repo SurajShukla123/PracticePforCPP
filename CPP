@@ -1,0 +1,95 @@
+
+// area fo tringle
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   float radies,area;
+   cout<<"enter the radies: ";
+   cin>>radies;
+   
+   area = 3.145*radies*radies;
+   cout<<area;
+  return 0;
+}
+
+
+//For fibonacci
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	
+	int a , b, c, i,n;
+	a =0;
+	b =1;
+	cout<<a<<b;
+	for(i =2;i<=6;i++)
+	{
+		c =a+b;
+		cout<<c;
+		a =b;
+		b =c;
+	}
+	return 0;
+}
+
+//Net salary
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	
+	float bs, pa ,pd;
+	float NP;
+	cout<<"Enter Basic salary: \n";
+	cin>>bs;
+	cout<<"Enter Persantage of Allowance: \n";
+	cin>>pa;
+	cout<<"Enter Persantage of Deducation: \n";
+	cin>>pd;
+	
+	NP =bs+bs*pa/100 -bs*pd/100;
+	
+	cout<<NP;
+	
+	return 0;
+}
+
+behavier of quarditic equation 
+#include<iostream>
+#include<cmath>
+using namespace std;
+
+int main (float a, float b, float c)
+{
+    cout<<"enter theree no.";
+    cin>>a>>b>>c;
+    float d , r1, r2;
+    d =b*b-4*a*c;
+    
+    if(d==0)
+    {
+        r1 = -b/(2*a);
+        cout<<"real and equal "<<r1;
+    }
+    else
+    {
+      if(d>0)
+      {
+          r1 = (-b+sqrt(d))/(2*a);
+          r2 = (-b-sqrt(d))/(2*a);
+          cout<<"real and unequal "<<r1<<" "<<r2;
+      }
+      else
+      {
+          cout<<"imaginary";
+      }
+    }
+}
